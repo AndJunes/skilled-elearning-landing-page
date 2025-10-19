@@ -1,0 +1,70 @@
+
+
+:root{
+    --color-blue-900: #13183F;
+    --color-blue-600: #666CA3;
+    --color-pink-600: #F74780;
+    --color-pink-300: #FFA7C3;
+    --color-grey: #83869A;
+    --color-white: #ffffff;
+    --color-gradient-pink: linear-gradient( #FF6F48, #F02AA6 );
+    --color-gradient-purple: linear-gradient( #4851FF, #F02AA6);
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    overflow-x: clip;
+}
+
+h1, h2, h3{
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.2;
+}
+
+h1, h3{
+    color: var(--color-blue-900);
+}
+
+p{
+    max-width: 35ch;
+    font-size: var(--fs-5);
+    line-height: 1.5;
+    color: var(--color-grey);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.logo{
+    width: 4.956rem;
+    transition: opacity 150ms ease-in-out;
+}
+
+@media (width >= 75em){
+    .logo{
+        width: 6.9375rem;
+    }
+}
+
+
+.logo:hover{
+    opacity: 0.75;
+}
